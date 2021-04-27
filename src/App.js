@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';  //import react which is a compulsory for this page  
+import './App.css';  //import the css page for App.js,it is named as App.css
+import NavBar from "./Navbar"; //import the Navbar function from Navbar.js
+import SideShow from "./Sideshow"; //import the Slideshow function from Slideshow.js
 
-function App() {
-  return (
+
+
+//define app function allong with an return 
+function App() {  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <NavBar /> 
+    <SideShow />
+    </div>);
 }
+
 
 export default App;

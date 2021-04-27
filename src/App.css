@@ -1,38 +1,194 @@
-.App {
+/*This css file controls all the styles of the entire system and etc*/
+/*Can be divided in multiple files,just need to import the particular file name to the js file*/
+
+
+/*Slideshow styles the information which is displayed on the left black box such as 'Welcome to Foodies Bay.....'*/
+.SideShow{
+  width: 350px ;
+  min-height: 839px ;
+  max-height: auto;
+  background-color: black;
+  opacity: 0.9;
+  padding:50px;
+}
+
+/*This styles all the font of h1 in slideshow*/
+.SideShow h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: Bold;
+  font-size: 30px;
+}
+
+/*This styles all the font of h4 in slideshow*/
+.SideShow h4{
+  text-align: justify;
+  color: whitesmoke;
+  font-weight: normal;
+  font-size: 20px;
+
+}
+
+/*Nav is a short form for navvigation bar*/
+/*Nav styles anything related to Nav*/
+.Nav{
+  background-color: transparent;
+  width: 100%;
+  height: 80px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+}
+
+/*This styles the right side of the nav bar*/
+.Nav .RightSide{
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*This styles the right side link max height of the nav bar*/
+.Nav .RightSide .links{
+  max-height:80px;
+}
+
+/*This styles the right side link components of the nav bar such as the font size ,color and etc*/
+.Nav .RightSide .links a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 65px;
+}
+
+
+/*Contact details styles all the information that is going to be displayed in the black opac box*/
+.ContactDetails{
+  width: 350px ;
+  min-height: 160px ;
+  max-height: auto;
+  background-color: black;
+  opacity: 0.8;
+  padding:10px;
+  right: 700px;
+  position:absolute;
+  top: 400px;
+}
+
+/*This styles all the h1 in contact details*/
+.ContactDetails h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: Bold;
+  font-size: 30px;
+
+}
+
+
+/*This styles all the h4 in contact details*/
+.ContactDetails h4{
+  text-align: center;
+  color: whitesmoke;
+  font-weight: normal;
+  font-size: 20px;
+
+}
+
+/*This styles all the h5 in contact details*/
+.ContactDetails h6{
+  
+  text-align: center;
+  color: red;
+  font-weight: normal;
+  font-size: 10px;
+
+}
+
+
+/*This styles the web details*/
+.WebDetails{
+  width: 1200px ;
+  min-height: 160px ;
+  max-height: auto;
+  background-color: black;
+  opacity: 0.8;
+  padding:10px;
+  right: 200px;
+  position:absolute;
+  top: 350px;
+}
+
+/*This styles all the h1 in web details*/
+.WebDetails h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: Bold;
+  font-size: 30px;
+}
+
+/*This styles all the h4 in web details*/
+.WebDetails h4{
+  text-align: left;
+  color: whitesmoke;
+  font-weight: normal;
+  font-size: 20px;
+
+}
+
+/* Slideshow */
+/*This control and also styles the slideshow in the home page*/
+.slider {
+  margin: 0%;
+  overflow: hidden;
+  position: fixed;
+  top: 200px;
+  right: 400px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 30px;
+  
+  }
+
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+  
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+ 
+}
+ 
+
+/* Buttons */
+/*Styles the button under the slideshow*/
+.slideshowDots {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 40px 10px 0px;
+  background-color: #c4c4c4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slideshowDot.active {
+  background-color: #6a0dad;
 }
